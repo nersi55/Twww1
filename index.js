@@ -31,7 +31,7 @@ app.post('/send-tweet', async (req, res) => {
     await page.getByRole('textbox', { name: 'Password Reveal password' }).click();
     await page.waitForTimeout(2000);
     
-    await page.getByRole('textbox', { name: 'Password Reveal password' }).fill('lmG*7Wr6$jlVlAXB');
+    await page.getByRole('textbox', { name: 'Password Reveal password' }).fill('-----');
     await page.waitForTimeout(2000);
     
     await page.getByTestId('LoginForm_Login_Button').click();
