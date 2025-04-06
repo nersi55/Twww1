@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.38.0-focal
+FROM mcr.microsoft.com/playwright:v1.51.1-focal
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ RUN npm install
 # Copy all files
 COPY . .
 
-# Set and expose port (explicit binding to this port)
+# Set and expose port
 ENV PORT=10000
 EXPOSE 10000
 
